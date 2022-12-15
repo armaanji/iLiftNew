@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713C04DA294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
+		713C04DB294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
+		713C04DC294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
+		713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
+		713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
+		713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
 		75DB47D429469859000F0540 /* iLiftNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D329469859000F0540 /* iLiftNewApp.swift */; };
 		75DB47D629469859000F0540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D529469859000F0540 /* ContentView.swift */; };
 		75DB47D82946985B000F0540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB47D72946985B000F0540 /* Assets.xcassets */; };
@@ -41,8 +47,6 @@
 		75DB482F2946992D000F0540 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75DB482E2946992D000F0540 /* FirebaseRemoteConfigSwift */; };
 		75DB48312946992D000F0540 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 75DB48302946992D000F0540 /* FirebaseStorage */; };
 		75DB48332946992D000F0540 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 75DB48322946992D000F0540 /* FirebaseStorageCombine-Community */; };
-		75DB48372946A168000F0540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75DB48362946A168000F0540 /* GoogleService-Info.plist */; };
-		75DB48392946A1E8000F0540 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 75DB48382946A1E7000F0540 /* Fonts */; };
 		75DB483C2946A223000F0540 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB483B2946A223000F0540 /* Login.swift */; };
 		75DB483E2946A250000F0540 /* firstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB483D2946A250000F0540 /* firstScreen.swift */; };
 		75DB48402946A28F000F0540 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB483F2946A28F000F0540 /* AccountInfo.swift */; };
@@ -71,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		713C04DD294BBF2100A7E626 /* SplitMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMaker.swift; sourceTree = "<group>"; };
 		75DB47D029469859000F0540 /* iLiftNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLiftNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB47D329469859000F0540 /* iLiftNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLiftNewApp.swift; sourceTree = "<group>"; };
 		75DB47D529469859000F0540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,8 +87,6 @@
 		75DB47EA2946985B000F0540 /* iLiftNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLiftNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB47EE2946985B000F0540 /* iLiftNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLiftNewUITests.swift; sourceTree = "<group>"; };
 		75DB47F02946985B000F0540 /* iLiftNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLiftNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		75DB48362946A168000F0540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		75DB48382946A1E7000F0540 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../../Documents/newiLiftCode/iLift_CreateAccount/iLiftV0/Fonts; sourceTree = "<group>"; };
 		75DB483B2946A223000F0540 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		75DB483D2946A250000F0540 /* firstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstScreen.swift; sourceTree = "<group>"; };
 		75DB483F2946A28F000F0540 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
@@ -169,11 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				75DB483A2946A1FE000F0540 /* Screens */,
-				75DB48362946A168000F0540 /* GoogleService-Info.plist */,
+				713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */,
 				75DB47D329469859000F0540 /* iLiftNewApp.swift */,
 				75DB47D529469859000F0540 /* ContentView.swift */,
 				75DB47D72946985B000F0540 /* Assets.xcassets */,
-				75DB48382946A1E7000F0540 /* Fonts */,
 				75DB47D92946985B000F0540 /* Preview Content */,
 			);
 			path = iLiftNew;
@@ -214,6 +217,7 @@
 				75DB48412946A2AB000F0540 /* PersonalData.swift */,
 				75DB48432946A2CC000F0540 /* Goals.swift */,
 				75DB48452946A2E9000F0540 /* HomePage.swift */,
+				713C04DD294BBF2100A7E626 /* SplitMaker.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -364,9 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB47DB2946985B000F0540 /* Preview Assets.xcassets in Resources */,
+				713C04DA294BBD5300A7E626 /* GoogleService-Info.plist in Resources */,
 				75DB47D82946985B000F0540 /* Assets.xcassets in Resources */,
-				75DB48372946A168000F0540 /* GoogleService-Info.plist in Resources */,
-				75DB48392946A1E8000F0540 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713C04DB294BBD5300A7E626 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713C04DC294BBD5300A7E626 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +406,7 @@
 				75DB48422946A2AB000F0540 /* PersonalData.swift in Sources */,
 				75DB48462946A2E9000F0540 /* HomePage.swift in Sources */,
 				75DB48492946A313000F0540 /* CustomTextField.swift in Sources */,
+				713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB47E52946985B000F0540 /* iLiftNewTests.swift in Sources */,
+				713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */,
 				75DB47F12946985B000F0540 /* iLiftNewUITestsLaunchTests.swift in Sources */,
 				75DB47EF2946985B000F0540 /* iLiftNewUITests.swift in Sources */,
 			);

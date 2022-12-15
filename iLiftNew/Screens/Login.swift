@@ -19,64 +19,64 @@ struct Login: View {
           }
       }
 
-    
     var body: some View {
-        ZStack{
-            //  BG
-            Image("calm")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack{
-                //  logo
-                Image("logo-6")
+            ZStack{
+                //  BG
+                Image("calm")
                     .resizable()
-                    .frame(width: 166.14, height: 26)
-                    .padding(.top, 50)
-                Spacer()
-                //  Form
-                VStack(spacing:0){
-                    Label {
-                        CustomTextfield(placeholder: Text("Email"), fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white, foregroundColor: Color.white, username: $email)
-                    } icon: {
-                        Image(systemName: "person")
-                            .frame(width: 14, height: 14)
-                            .padding(.leading)
-                    }.frame(height: 45)
-                    .overlay(Rectangle().stroke(Color.white, lineWidth: 0.5).frame(height: 45))
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack{
+                    //  logo
+                    Image("logo-6")
+                        .resizable()
+                        .frame(width: 166.14, height: 26)
+                        .padding(.top, 50)
+                    Spacer()
+                    //  Form
+                    VStack(spacing:0){
+                        Label {
+                            CustomTextfield(placeholder: Text("Email"), fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white, foregroundColor: Color.white, username: $email)
+                        } icon: {
+                            Image(systemName: "person")
+                                .frame(width: 14, height: 14)
+                                .padding(.leading)
+                        }.frame(height: 45)
+                            .overlay(Rectangle().stroke(Color.white, lineWidth: 0.5).frame(height: 45))
+                        
+                        Label {
+                            CustomSecureField(placeholder: Text("Password"), fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white, password: $password)
+                        } icon: {
+                            Image(systemName: "lock")
+                                .frame(width: 14, height: 14)
+                                .padding(.leading)
+                        }.frame(height: 45)
+                            .overlay(Rectangle().stroke(Color.white, lineWidth: 0.5).frame(height: 45))
+                        
+                    }
+                    Text("Forgot Password")
+                        .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white))
+                        .padding(.bottom,30)
                     
-                    Label {
-                        CustomSecureField(placeholder: Text("Password"), fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white, password: $password)
-                    } icon: {
-                        Image(systemName: "lock")
-                            .frame(width: 14, height: 14)
-                            .padding(.leading)
-                    }.frame(height: 45)
-                    .overlay(Rectangle().stroke(Color.white, lineWidth: 0.5).frame(height: 45))
+                    
+                    
+                    
+                    
+                    //New method for page switch
+                    NavigationLink(destination: HomePage().onAppear()
+                    {
+                        login()
+                       
+                    }
+                                   , label: {Text("LOGIN")
+                        .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 18, fontColor: Color.black))}).frame(maxWidth:.infinity, maxHeight: 60)
+                        .background(Color.white)
                     
                 }
-                Text("Forgot Password")
-                    .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white))
-                    .padding(.bottom,30)
-                    
+                .foregroundColor(.white)
+                //.padding(.horizontal,20)
+                //.padding(.bottom,60)
                 
-                
-                
-                
-            //New method for page switch
-                NavigationLink(destination: HomePage().onAppear()
-                {
-                    login()
-                }
-                               , label: {Text("LOGIN")
-                    .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 18, fontColor: Color.black))}).frame(maxWidth:.infinity, maxHeight: 60)
-                    .background(Color.white)
-            
-            }
-            .foregroundColor(.white)
-            //.padding(.horizontal,20)
-            //.padding(.bottom,60)
-            
         }
     }
 }
