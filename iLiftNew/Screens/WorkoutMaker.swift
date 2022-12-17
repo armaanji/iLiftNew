@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SplitMaker: View {
+struct WorkoutMaker: View {
     
     // Define an array of common workouts to display in the picker
     let workouts = ["Bar Dip",
@@ -218,18 +218,17 @@ struct SplitMaker: View {
     @State private var selectedSplit = WorkoutSplit(label: "", workouts: [])
     @State var selectedNumSets = 0
     @State var selectedNumReps = 0
-    @State var arrayOfRepsAndSets = [""]
     @State var numSets = [1,2,3,4,5]
     @State var numReps = ["1-2","3-5","5-8","8-10","10-12"]
-    @State var indexCounter = 0
-    
-    @State private var splitIsSelected = true
+
+    //determines whether or not to display optionality of adding exercises
+    @State private var splitIsSelected = false
 
     var body: some View {
         NavigationView {
             Form {
                 // Use a text field to allow the user to enter a label for the workout split
-                TextField("Enter a label for the split...", text: $splitLabel)
+                TextField("Enter a label for the workout...", text: $splitLabel)
                         .background(Color.white)
                         .cornerRadius(8)
                 
@@ -241,21 +240,22 @@ struct SplitMaker: View {
                     // Clear the current split and label
                     self.selectedSplit = WorkoutSplit(label: "", workouts: [])
                     self.splitLabel = ""
+                    self.splitIsSelected = true
                 }) {
-                    Text("Create Split")
+                    Text("Create Workout")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.blue)
                         .cornerRadius(8)
-                }.offset(x: 91)
+                }.offset(x: 82)
                 
                 // Use a list to display the created splits
-                Section(header: Text("Created Splits:")) {
+                Section(header: Text("Created Workouts:")) {
                     ForEach(splits, id: \.label) { split in
                         // Add a button to each split in the list to allow the user to edit it
                         Button(action: {
-                            splitIsSelected = true
+                            self.splitIsSelected = true
                             self.selectedSplit = split
                             self.splitLabel = split.label
                         }) {
@@ -264,11 +264,12 @@ struct SplitMaker: View {
                                     .font(.headline)
                                 
                                 // Use a nested ForEach loop to display the workouts in the split
-                                ForEach(split.workouts, id: \.self) { workout in
-                                    Text("\(workout) (\(arrayOfRepsAndSets[indexCounter]))")
+                                ForEach(0..<split.workouts.count, id: \.self) { index in
+                                    Text("\(split.workouts[index])")
                                         .font(.subheadline)
                                         .foregroundColor(.gray)
                                 }
+                                
                                 
                             }
                         }
@@ -276,7 +277,7 @@ struct SplitMaker: View {
                 }
             
 
-                if !selectedSplit.label.isEmpty && splitIsSelected {
+                if !selectedSplit.label.isEmpty && self.splitIsSelected {
                     // Use a picker to allow the user to select a workout
                     Picker(selection: $selectedWorkout, label: Text("Select a Exercise \n To Add To \(splitLabel)")) {
                         ForEach(workouts.indices) { index in
@@ -293,7 +294,7 @@ struct SplitMaker: View {
                         HStack {
                             Image(systemName: "magnifyingglass")
 
-                            TextField("Search workouts", text: $searchQuery)
+                            TextField("Search Exercises", text: $searchQuery)
 
                             if !searchQuery.isEmpty {
                                 
@@ -331,30 +332,27 @@ struct SplitMaker: View {
                         }
                     }
                     Button(action: {
-                        self.selectedSplit.workouts.append(self.workouts[self.selectedWorkout])
-                        self.arrayOfRepsAndSets.append("Sets: \(numSets[selectedNumSets]) Reps: \(numReps[selectedNumReps])")
-                        indexCounter += 1
+                        self.selectedSplit.workouts.append("\(self.workouts[self.selectedWorkout]) (Sets: \(numSets[selectedNumSets]) Reps: \(numReps[selectedNumReps]))")
                         // Update the list of splits with the updated split
                         if let index = self.splits.firstIndex(where: { $0.label == self.selectedSplit.label }) {
                             self.splits[index] = self.selectedSplit
                         
                         }
                     }) {
-                        Text("Add Execise").offset(x:110)
+                        Text("Add Exercise").offset(x:110)
                     }
                     Button(action: {
                                     // Close out the form here
-                                    self.splitIsSelected = false
+                        self.splitIsSelected = false
                                 }) {
                                     Text("Done").offset(x:140)
                                 }
                     Button(action: {
-                                    // Close out the form here
-                     //MAKE IT SO THAT WHEN A SPLIT IS DELETED, THE INDECIES ASSOCIATED WITH THE DELETED WORKOUTS AND REPS/SETS ALSO GETS DELETED   arrayOfRepsAndSets = arrayOfRepsAndSets.removeSubrange(<#T##Range<Self.Index>#>)
+                                    // Removes the selected Workout (called split in back end)
                         splits = splits.filter { $0 != selectedSplit }
                         self.splitIsSelected = false
                                 }) {
-                                    Text("Remove Split").offset(x:110).font(.headline)
+                                    Text("Remove Workout").offset(x:110).font(.headline)
                                         .foregroundColor(.red)
                                 }
                 }
@@ -370,8 +368,10 @@ private struct WorkoutSplit: Hashable {
 
 
 
-struct SplitMaker_Previews: PreviewProvider {
+
+
+struct SWorkoutMaker_Previews: PreviewProvider {
     static var previews: some View {
-        SplitMaker()
+        WorkoutMaker()
     }
 }

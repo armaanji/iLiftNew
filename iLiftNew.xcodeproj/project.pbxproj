@@ -10,9 +10,9 @@
 		713C04DA294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
 		713C04DB294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
 		713C04DC294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
-		713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
-		713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
-		713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
+		713C04DE294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
+		713C04DF294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
+		713C04E0294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
 		75DB47D429469859000F0540 /* iLiftNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D329469859000F0540 /* iLiftNewApp.swift */; };
 		75DB47D629469859000F0540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D529469859000F0540 /* ContentView.swift */; };
 		75DB47D82946985B000F0540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB47D72946985B000F0540 /* Assets.xcassets */; };
@@ -76,7 +76,7 @@
 
 /* Begin PBXFileReference section */
 		713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		713C04DD294BBF2100A7E626 /* SplitMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMaker.swift; sourceTree = "<group>"; };
+		713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMaker.swift; sourceTree = "<group>"; };
 		75DB47D029469859000F0540 /* iLiftNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLiftNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB47D329469859000F0540 /* iLiftNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLiftNewApp.swift; sourceTree = "<group>"; };
 		75DB47D529469859000F0540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 				75DB48412946A2AB000F0540 /* PersonalData.swift */,
 				75DB48432946A2CC000F0540 /* Goals.swift */,
 				75DB48452946A2E9000F0540 /* HomePage.swift */,
-				713C04DD294BBF2100A7E626 /* SplitMaker.swift */,
+				713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 				75DB48422946A2AB000F0540 /* PersonalData.swift in Sources */,
 				75DB48462946A2E9000F0540 /* HomePage.swift in Sources */,
 				75DB48492946A313000F0540 /* CustomTextField.swift in Sources */,
-				713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04DE294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB47E52946985B000F0540 /* iLiftNewTests.swift in Sources */,
-				713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04DF294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04E0294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
 				75DB47F12946985B000F0540 /* iLiftNewUITestsLaunchTests.swift in Sources */,
 				75DB47EF2946985B000F0540 /* iLiftNewUITests.swift in Sources */,
 			);
