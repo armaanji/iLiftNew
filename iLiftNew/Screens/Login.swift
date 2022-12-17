@@ -54,16 +54,17 @@ struct Login: View {
                             .overlay(Rectangle().stroke(Color.white, lineWidth: 0.5).frame(height: 45))
                         
                     }
-                    Text("Forgot Password")
-                        .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white))
-                        .padding(.bottom,30)
+                    NavigationLink(destination: ForgotPasswordView(), label:{
+                        Text("Forgot Password")
+                            .modifier(CustomTextM(fontName: "NunitoSans-Bold", fontSize: 16, fontColor: Color.white))
+                        .padding(.bottom,30)})
                     
                     
                     
                     
                     
                     //New method for page switch
-                    NavigationLink(destination: HomePage().onAppear()
+                    NavigationLink(destination: HomeView().onAppear()
                     {
                         login()
                        

@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "photo-1557683325-3ba8f0df79de.jpeg",
+      "filename" : "calm.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "calm 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
