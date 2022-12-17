@@ -10,9 +10,15 @@
 		713C04DA294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
 		713C04DB294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
 		713C04DC294BBD5300A7E626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */; };
-		713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
-		713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
-		713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* SplitMaker.swift */; };
+		713C04DE294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
+		713C04DF294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
+		713C04E0294BBF2100A7E626 /* WorkoutMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */; };
+		717D8994297F1598005CEAC8 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D8993297F1598005CEAC8 /* Goals.swift */; };
+		71877F9B297F24580084CF37 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71877F9A297F24580084CF37 /* Settings.swift */; };
+		71877F9D297F249C0084CF37 /* AddCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71877F9C297F249C0084CF37 /* AddCoach.swift */; };
+		71877F9F297F24D30084CF37 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71877F9E297F24D30084CF37 /* ForgotPasswordView.swift */; };
+		71BBD512296E0B4B002F6A56 /* NutritionalDATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBD511296E0B4B002F6A56 /* NutritionalDATA.swift */; };
+		71E3271129882BD700401596 /* FirebaseDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3271029882BD700401596 /* FirebaseDocumentView.swift */; };
 		75DB47D429469859000F0540 /* iLiftNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D329469859000F0540 /* iLiftNewApp.swift */; };
 		75DB47D629469859000F0540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB47D529469859000F0540 /* ContentView.swift */; };
 		75DB47D82946985B000F0540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB47D72946985B000F0540 /* Assets.xcassets */; };
@@ -51,8 +57,7 @@
 		75DB483E2946A250000F0540 /* firstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB483D2946A250000F0540 /* firstScreen.swift */; };
 		75DB48402946A28F000F0540 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB483F2946A28F000F0540 /* AccountInfo.swift */; };
 		75DB48422946A2AB000F0540 /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB48412946A2AB000F0540 /* PersonalData.swift */; };
-		75DB48442946A2CC000F0540 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB48432946A2CC000F0540 /* Goals.swift */; };
-		75DB48462946A2E9000F0540 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB48452946A2E9000F0540 /* HomePage.swift */; };
+		75DB48462946A2E9000F0540 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB48452946A2E9000F0540 /* HomeView.swift */; };
 		75DB48492946A313000F0540 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB48482946A313000F0540 /* CustomTextField.swift */; };
 		75DB484B2946A33D000F0540 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB484A2946A33D000F0540 /* CustomSecureField.swift */; };
 /* End PBXBuildFile section */
@@ -76,7 +81,13 @@
 
 /* Begin PBXFileReference section */
 		713C04D9294BBD5300A7E626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		713C04DD294BBF2100A7E626 /* SplitMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMaker.swift; sourceTree = "<group>"; };
+		713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMaker.swift; sourceTree = "<group>"; };
+		717D8993297F1598005CEAC8 /* Goals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		71877F9A297F24580084CF37 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		71877F9C297F249C0084CF37 /* AddCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoach.swift; sourceTree = "<group>"; };
+		71877F9E297F24D30084CF37 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		71BBD511296E0B4B002F6A56 /* NutritionalDATA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalDATA.swift; sourceTree = "<group>"; };
+		71E3271029882BD700401596 /* FirebaseDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDocumentView.swift; sourceTree = "<group>"; };
 		75DB47D029469859000F0540 /* iLiftNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLiftNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB47D329469859000F0540 /* iLiftNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLiftNewApp.swift; sourceTree = "<group>"; };
 		75DB47D529469859000F0540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,8 +102,7 @@
 		75DB483D2946A250000F0540 /* firstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstScreen.swift; sourceTree = "<group>"; };
 		75DB483F2946A28F000F0540 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
 		75DB48412946A2AB000F0540 /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
-		75DB48432946A2CC000F0540 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
-		75DB48452946A2E9000F0540 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		75DB48452946A2E9000F0540 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		75DB48482946A313000F0540 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		75DB484A2946A33D000F0540 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,12 +222,17 @@
 			children = (
 				75DB48472946A2F8000F0540 /* TextFields */,
 				75DB483B2946A223000F0540 /* Login.swift */,
+				71877F9C297F249C0084CF37 /* AddCoach.swift */,
+				71877F9E297F24D30084CF37 /* ForgotPasswordView.swift */,
+				71877F9A297F24580084CF37 /* Settings.swift */,
 				75DB483D2946A250000F0540 /* firstScreen.swift */,
 				75DB483F2946A28F000F0540 /* AccountInfo.swift */,
 				75DB48412946A2AB000F0540 /* PersonalData.swift */,
-				75DB48432946A2CC000F0540 /* Goals.swift */,
-				75DB48452946A2E9000F0540 /* HomePage.swift */,
-				713C04DD294BBF2100A7E626 /* SplitMaker.swift */,
+				717D8993297F1598005CEAC8 /* Goals.swift */,
+				71BBD511296E0B4B002F6A56 /* NutritionalDATA.swift */,
+				75DB48452946A2E9000F0540 /* HomeView.swift */,
+				71E3271029882BD700401596 /* FirebaseDocumentView.swift */,
+				713C04DD294BBF2100A7E626 /* WorkoutMaker.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -396,17 +411,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DB48442946A2CC000F0540 /* Goals.swift in Sources */,
+				71877F9D297F249C0084CF37 /* AddCoach.swift in Sources */,
 				75DB483E2946A250000F0540 /* firstScreen.swift in Sources */,
 				75DB484B2946A33D000F0540 /* CustomSecureField.swift in Sources */,
+				71877F9B297F24580084CF37 /* Settings.swift in Sources */,
 				75DB483C2946A223000F0540 /* Login.swift in Sources */,
 				75DB48402946A28F000F0540 /* AccountInfo.swift in Sources */,
 				75DB47D629469859000F0540 /* ContentView.swift in Sources */,
 				75DB47D429469859000F0540 /* iLiftNewApp.swift in Sources */,
 				75DB48422946A2AB000F0540 /* PersonalData.swift in Sources */,
-				75DB48462946A2E9000F0540 /* HomePage.swift in Sources */,
+				75DB48462946A2E9000F0540 /* HomeView.swift in Sources */,
+				717D8994297F1598005CEAC8 /* Goals.swift in Sources */,
+				71E3271129882BD700401596 /* FirebaseDocumentView.swift in Sources */,
 				75DB48492946A313000F0540 /* CustomTextField.swift in Sources */,
-				713C04DE294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04DE294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
+				71877F9F297F24D30084CF37 /* ForgotPasswordView.swift in Sources */,
+				71BBD512296E0B4B002F6A56 /* NutritionalDATA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB47E52946985B000F0540 /* iLiftNewTests.swift in Sources */,
-				713C04DF294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04DF294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713C04E0294BBF2100A7E626 /* SplitMaker.swift in Sources */,
+				713C04E0294BBF2100A7E626 /* WorkoutMaker.swift in Sources */,
 				75DB47F12946985B000F0540 /* iLiftNewUITestsLaunchTests.swift in Sources */,
 				75DB47EF2946985B000F0540 /* iLiftNewUITests.swift in Sources */,
 			);
@@ -566,6 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"iLiftNew/Preview Content\"";
 				DEVELOPMENT_TEAM = FLCRS78AT4;
 				ENABLE_PREVIEWS = YES;

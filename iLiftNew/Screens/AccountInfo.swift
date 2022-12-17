@@ -117,10 +117,9 @@ struct AccountInfo: View {
                 }
                                
                                
-                               , label:  {
-                icon: do {Image (systemName: "arrow.right").resizable().frame(width:35, height:35).foregroundColor(.white)}
-                    
-                })
+                               , label:  {Text("Submit")
+                    .modifier(CustomTextM(fontName: "Futura", fontSize: 22, fontColor: .white))}).frame(maxWidth:.infinity, maxHeight: 60)
+                    .background(Capsule().fill(Color(red: 44/255, green: 85/255, blue: 211/255)).frame(width: 180, height: 50))
                 
                 
                 

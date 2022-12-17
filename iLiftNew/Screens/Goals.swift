@@ -71,7 +71,7 @@ struct Goals: View {
                 Text("    Replace Fat With Muscle Through Stable Caloric Intake").modifier(CustomTextM(fontName: "NunitoSans-Bold",fontSize: 25,fontColor: .black))
             }
             Spacer()
-            NavigationLink(destination: HomePage().onAppear()
+            NavigationLink(destination: HomeView().onAppear()
             {
                 addGoals()
             }
